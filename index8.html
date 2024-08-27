@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordering</title>
+    <style>
+        h1{
+            text-align: center;
+            color: white;
+            font-size: 60px;
+            font-family:Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+        }
+        .order::before{
+            content: "";
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background: url('./images/details.webp') no-repeat center center/cover;
+            z-index: -1;
+            opacity: 0.99;
+        }
+        .details form{
+            display: flex;
+            flex-direction: column;
+            color: white;
+            justify-content: center;
+            align-items: center;
+        }
+        .details form label{
+            font-size: 20px;
+        }
+        .details form input{
+            border: 2px solid #00000000;
+            border-radius: 7px;
+            padding: 3px;
+            margin: 5px;
+        }
+        .details form textarea{
+            border: 2px solid #00000000;
+            border-radius: 7px;
+            padding: 3px;
+            margin:5px;
+        }
+        h3{
+            color: white;
+            text-align: center;
+        }
+        .details{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+    </style>
+ </head>
+ <body>
+    <div class="order">
+        <h1>Order Now</h1>
+        <div class="details">
+            <form>  
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="enter your name">
+                <label for="mob">Phone No</label>
+                <input type="tel" name="mob" id="mob" placeholder="enter your phone no">
+                <label for="add">Delivary Address</label>
+                <textarea name="add" id="add" rows="5" cols="20" placeholder="enter your address"></textarea>
+            </form>
+            <h3>Egg Noodles<br>Black Paper</h3>
+            <h3>Total Price :$15.99</h3>
+            
+            <button>Order</button>
+
+
+        </div>
+    </div>
+
+    
+
+    
+ </body>
+ </html>

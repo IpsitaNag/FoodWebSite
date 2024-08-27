@@ -1,0 +1,196 @@
+<!-- Menu -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        .menu {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .menu::before {
+            content: "";
+            background: url('./images/menubackground.jpg')no-repeat center center/cover;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.99;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 100px;
+            font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+            font-style: italic;
+            color: white;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 30px;
+            font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+            color:white;
+
+        }
+
+        h5 {
+            font-size: 15px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .container img {
+            height: 100px;
+            transition: all 0.5s ease-in-out;
+
+        }
+
+        .container img:hover {
+            scale: 2;
+        }
+
+        .container ul {
+            display: flex;
+        }
+
+        .container ul li {
+            list-style: none;
+            margin: 5px;
+            padding: 5px;
+            color: white;
+        }
+
+        .btnn {
+            border: 2px solid white;
+            color: white;
+            background-color: #ffffff00;
+            border-radius: 10px;
+            font-size: 20px;
+
+        }
+
+        .btnn:hover {
+            background-color: grey;
+        }
+
+        footer {
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 7px 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="menu">
+        <h1>Menu</h1>
+        <h2>MyOnlineMeal</h2>
+
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/burgar1.jpg" alt="burgar"><br><br>
+                    <button class="btnn"><a href="index2.html" target="_blank">
+                            <h6>Mutton Burgar <br> Black Paper Sauce</h6>
+                        </a></button>
+                    <h5>$25.9</h5>
+                </li>
+                <li>
+                    <img src="images/burgar2.webp" alt="burgar"><br><br>
+                    <button class="btnn"><a href="index3.html" target="_blank">
+                            <h6>Chicken Burgar <br> BBQ Sauce</h6>
+                        </a></button>
+                    <h5>$20.25</h5>
+                </li>
+                <li>
+                    <img src="images/burgar3.jpeg" alt="burgar"><br><br>
+
+                    <button class="btnn"><a href="index4.html" target="_blank">
+                            <h6>Burgar Meal <br> French Fries with Cock</h6>
+                        </a></button>
+                    <h5>$27</h5>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/pizza1.jpg" alt="burgar"><br><br>
+                    <button class="btnn"><a href="index5.html" target="_blank">
+                            <h6>Veg Pizza <br>Overloaded cheez </h6>
+                        </a></button>
+                    <h5>$18</h5>
+                </li>
+                <li>
+                    <img src="images/pizza2.jpg" alt="burgar"><br><br>
+
+                    <button class="btnn"><a href="index6.html" target="_blank">
+                            <h6>Chicken Pizza <br>BBQ Sauce </h6>
+                        </a></button>
+                    <h5>$30.1</h5>
+                </li>
+                <li>
+                    <img src="images/pizza3.jpg" alt="burgar"><br><br>
+                    <button class="btnn"><a href="index7.html" target="_blank">
+                            <h6>Cheez Corn Pizza<br>Overloaded Cheez</h6>
+                        </a></button>
+                    <h5>$21.33</h5>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/noodles1.jpg" alt="burgar"><br><br>
+                    <button class="btnn"><a href="index8.html" target="_blank">
+                            <h6>Egg Noodles<br>Black Paper</h6>
+                        </a></button>
+                    <h5>$15.99</h5>
+                </li>
+                <li>
+                    <img src="images/noodles2.jpeg" alt="burgar"><br><br>
+                    <button class="btnn"><a href="index9.html" target="_blank">
+                            <h6>Chicken Hakka Noodles<br>Mutton Sauce</h6>
+                        </a></button>
+                    <h5>$30</h5>
+                </li>
+                <li>
+                    <img src="images/noodles3.jpg" alt="burgar"><br><br>
+                    <button class="btnn"><a href="index10.html" target="_blank">
+                            <h6>Veg Hakka Noodles<br>Black Paper Sauce</h6>
+                        </a></button>
+                    <h5>$15.45</h5>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        &copy; www.MyOnlineMeal.com. All rights reserved!
+    </footer>
+
+</body>
+
+</html>
